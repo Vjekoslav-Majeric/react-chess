@@ -64,13 +64,13 @@ export default function Board({history, moveNumber, handleMove }) {
   }
 
   return (
-    <>
+    <div className="board">
       {getSquares(board).map((row, index) => (
         <div className="row no-bottom-margin" key={index}>
           {/*squares will never be reordered so this key should be ok*/}
           {row}
         </div>
       ))}
-    </>
+    </div>
   );
 }

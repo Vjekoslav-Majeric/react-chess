@@ -2,92 +2,28 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/*===============================================================*/
-
 * {
-  box-sizing: border-box; /* TODO: skuži kaj je box-sizing i zakaj je na svemu?*/
+  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
-  margin: 20px; /*TODO: zašto margin na body?*/
+  margin: 20px;
   padding: 0;
 }
 
-code {
-  /*TODO: da li je ovo na sve i zašto se zove code?*/
-  font-size: 1.2em;
+.board{
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .square {
   /*TODO: ovo će trebati refactorati da se skalira itd.*/
   border: 0;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 68px;
-  height: 68px !important;
   padding: 0;
-  text-align: center;
-  width: 68px !important;
+  height: 12%;
+  width: 12%;
 }
-
-.board-row:after {
-  /*TODO: skužit kaj je ovo i znat to koristit*/
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.status {
-  /*KRAJ maknut sav css koji mi netreba*/
-  margin-bottom: 10px;
-}
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
-}
-
-/*===============================================================*/
 
 .no-bottom-margin {
   margin-bottom: 0 !important;
